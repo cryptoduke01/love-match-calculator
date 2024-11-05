@@ -1,68 +1,92 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-image: linear-gradient(to right, #4D6BDD, #EC5A7E);
 }
 
+/* Header Section */
 .header {
-    background-color: #1a1a1a;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(77, 107, 221, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-content h1 {
-    font-size: 24px;
-    margin-bottom: 5px;
+  font-size: 3rem;
+  margin: 0;
 }
 
+/* Hero Section */
 .hero {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #003366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
 }
 
-.hero img {
-    max-width: 80%;
-    height: auto;
+.hero-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Links Section */
 .links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 0;
-    background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.link-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .link-button a {
-    color: #fff;
-    background-color: #007acc;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
+/* Comparison Banner */
 .comparison-banner {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f2f2f2;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(77, 107, 221, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-banner p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .comparison-banner img {
-    max-width: 90%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer */
 .footer {
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
+  background-color: rgba(77, 107, 221, 0.8);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+                             }
