@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,44 +7,133 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Header Section -->
     <header class="header">
         <div class="header-content">
             <h1>KAMALA47</h1>
         </div>
     </header>
-
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="IMG-20241105-WA0591(1).jpg" alt="Kamala Hero Image">
-        </div>
-    </section>
+<section class="hero">
+    <div class="hero-content">
+        <img src="IMG-20241105-WA0591(1).jpg" alt="Kamala Hero Image">
+    </div>
+</section>
 
-    <!-- Links Section -->
-    <section class="links">
-        <div class="link-button">
-            <a href="https://kamala47cto.com">Website</a>
-        </div>
-        <div class="link-button">
-            <a href="https://twitter.com/YourTwitterLink">Twitter</a>
-        </div>
-        <div class="link-button">
-            <a href="https://t.me/kamala47officialCTO">Telegram</a>
-        </div>
-    </section>
+<!-- Links Section -->
+<section class="links">
+    <div class="link-button">
+        <a href="https://kamala47cto.com">Website</a>
+    </div>
+    <div class="link-button">
+        <a href="https://twitter.com/YourTwitterLink">Twitter</a>
+    </div>
+    <div class="link-button">
+        <a href="https://t.me/kamala47officialCTO">Telegram</a>
+    </div>
+</section>
 
-    <!-- Comparison Banner -->
-    <section class="comparison-banner">
-        <p>Comparison of KAMALA47 with other Tokens</p>
-        <img src="comparison-banner.png" alt="Comparison Banner">
-    </section>
+<!-- Comparison Banner -->
+<section class="comparison-banner">
+    <p>Comparison of KAMALA47 with other Tokens</p>
+    <img src="comparison-banner.png" alt="Comparison Banner">
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 KAMALA47. All Rights Reserved.</p>
-    </footer>
+<!-- Dextools Section -->
+<section class="dextools">
+    <div class="dextools-content">
+        <h2>Dextools</h2>
+        <p>Check out the KAMALA47 token on Dextools.</p>
+        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x123456789abcdef" class="dextools-button">View on Dextools</a>
+    </div>
+</section>
 
-</body>
+<!-- Twitter Section -->
+<section class="twitter">
+    <div class="twitter-content">
+        <h2>Twitter</h2>
+        <p>Follow KAMALA47 on Twitter for updates.</p>
+        <a href="https://twitter.com/YourTwitterLink" class="twitter-button">Follow on Twitter</a>
+    </div>
+</section>
+
+<!-- Telegram Section -->
+<section class="telegram">
+    <div class="telegram-content">
+        <h2>Telegram</h2>
+        <p>Join the KAMALA47 Telegram community.</p>
+        <a href="https://t.me/kamala47officialCTO" class="telegram-button">Join Telegram</a>
+    </div>
+</section>
+
+<!-- User Retention Section -->
+<section class="user-retention">
+    <div class="user-retention-content">
+        <h2>User Retention</h2>
+        <div class="chart-container">
+            <canvas id="retentionChart"></canvas>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 KAMALA47. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Create the line chart for user retention
+    var ctx = document.getElementById('retentionChart').getContext('2d');
+    var retentionChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+            datasets: [{
+                label: 'User Retention',
+                data: [100, 89.2, 80.6, 72.1, 65.3, 62.3, 55.7],
+                borderColor: '#fff',
+                backgroundColor: '#fff',
+                borderWidth: 3
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: {
+                        stepSize: 20,
+                        callback: function(value, index, ticks) {
+                            return value + '%';
+                        }
+                    }
+                },
+                x: {
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.2)'
+                    }
+                }
+            },
+            plugins: {
+                title: {
+                    display: false
+                },
+                legend: {
+                    labels: {
+                        color: '#fff'
+                    }
+                },
+                tooltip: {
+                    titleColor: '#fff',
+                    bodyColor: '#fff'
+                }
+            }
+        }
+    });
+                       </script>
+
+            </body>
 </html>
