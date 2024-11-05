@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #003366;
+}
+
+.hero img {
+    max-width: 80%;
+    height: auto;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: #1a1a1a;
+}
+
+.link-button a {
+    color: #fff;
+    background-color: #007acc;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.comparison-banner {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f2f2f2;
+}
+
+.comparison-banner img {
+    max-width: 90%;
+    height: auto;
+}
+
+.footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
