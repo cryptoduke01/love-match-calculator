@@ -21,11 +21,14 @@ body {
 }
 
 /* Hero Section */
+
+/* Adjust Hero Section to reduce space below */
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Reduced height */
+    margin-bottom: 0; /* Remove any margin */
 }
 
 .hero-content img {
@@ -59,6 +62,26 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+/* Contract Address Section */
+.contract-address {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.contract-address h2 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem;
+}
+
+.contract-address p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
 }
 
 /* Comparison Banner */
